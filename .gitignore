@@ -71,3 +71,9 @@ proguard/
 
 # Eclipse metadata
 UsbAccessoryTester/.metadata/
+UsbAccessoryTester/UsbAccessoryTester/.classpath
+UsbAccessoryTester/UsbAccessoryTester/.project
+UsbAccessoryTester/UsbAccessoryTester/.settings/
+UsbAccessoryTester/UsbAccessoryTester/proguard-project.txt
+UsbAccessoryTester/UsbAccessoryTester/project.properties
+

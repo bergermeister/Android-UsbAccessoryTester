@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="baud_rates">
+		<item>9600</item>
+		<item>19200</item>
+		<item>38400</item>
+		<item>57600</item>
+		<item>115200</item>
+		<item>230400</item>
+		<item>460800</item>
+		<item>921600</item>
+	</string-array>
+	
+	<string-array name="data_bits">
+	    <item>8</item>				<!-- 8 -->
+	    <item>7</item>				<!-- 7 -->
+	</string-array>
+	
+	<string-array name="stop_bits">
+	    <item>1</item>				<!-- 1 -->
+	    <item>2</item>				<!-- 2 -->
+	</string-array>
+	
+	<string-array name="parity">
+	    <item>None</item>			<!-- 0 -->
+	    <item>Odd</item>			<!-- 1 -->
+	    <item>Even</item>			<!-- 2 -->
+	    <item>Mark</item>	   		<!-- 3 -->
+	    <item>Space</item>			<!-- 4 -->
+	</string-array>
+	
+	<string-array name="flow_control">
+	    <item>None</item>			<!-- 0 -->
+	    <item>CTS, RTS</item>		<!-- 1 -->
+	</string-array>
+	
+	<string-array name="hex_values">
+	   	<item>NULL</item>
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>A</item>
+	    <item>B</item>
+	    <item>C</item>
+	    <item>D</item>
+	    <item>F</item>
+	</string-array>
+	
+</resources>

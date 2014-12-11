@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UsbAccessoryTester</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="select_accessory">Select Accessory</string>
+    <string name="discover_accessories">Discover</string>
+	<string name="uart_settings">Configure Settings</string>
+    <string name="baud_rate">Baud Rate</string>
+    <string name="data_bits">Data Bits</string>
+    <string name="stop_bits">Stop Bits</string>
+    <string name="parity">Parity</string>
+    <string name="flow_control">Flow Control</string>
+    <string name="open_accessory">Open Accessory</string>
+    <string name="close_accessory">Close Accessory</string>
+    <string name="transmit_data">Transmit Data</string>
+    <string name="transmit_string_data">Transmit ASCII String</string>
+    <string name="transmit_hex_data">Transmit HEX String</string>
+	<string name="send">Send</string>
+    <string name="log">Log</string>
+    
+    <string name="accessories_not_found">No Usb Accessories were found</string>
+    <string name="accessory_not_selected">No Usb Accessory selected</string>
+    <string name="accessory_opened">Accessory Opened</string>
+    <string name="invalid_hex_string">Invalid format for Hex String</string>
+    <string name="received">Recv</string>
+	<string name="sent">Sent</string>
+    
+</resources>

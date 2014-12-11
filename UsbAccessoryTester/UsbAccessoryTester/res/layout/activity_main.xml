@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <!-- Select Accessory Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_accessory"
+        style="?android:listSeparatorTextViewStyle"/>
+    
+    <!-- Select Accessory Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/discoverAccessories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/discover_accessories"/>
+        
+        <Spinner
+            android:id="@+id/accessoryList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"/>
+        
+    </LinearLayout>
+
+    <!-- Settings Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/uart_settings"
+        style="?android:listSeparatorTextViewStyle"/>
+    
+    <!-- Settings Row -->
+    <LinearLayout
+        android:id="@+id/accessorySettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        
+        <!-- Baud Rates -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/baud_rate"/>
+            
+            <Spinner
+                android:id="@+id/accessoryBaudRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/baud_rates"/>
+            
+        </LinearLayout>
+        
+        <!-- Data Bits -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/data_bits"/>
+            
+            <Spinner
+                android:id="@+id/accessoryDataBits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/data_bits"/>
+            
+        </LinearLayout>
+        
+        <!-- Stop Bits -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/stop_bits"/>
+            
+            <Spinner
+                android:id="@+id/accessoryStopBits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/stop_bits"/>
+            
+        </LinearLayout>
+        
+        <!-- Stop Bits -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/parity"/>
+            
+            <Spinner
+                android:id="@+id/accessoryParity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/parity"/>
+            
+        </LinearLayout>
+        
+        <!-- Flow Control -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/flow_control"/>
+            
+            <Spinner
+                android:id="@+id/accessoryFlowControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/flow_control"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <!-- Open / Close Accessory Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+	        android:id="@+id/openAccessory"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/open_accessory"
+	        android:padding="3dp"
+	        android:enabled="false"/>
+        
+        <Button
+	        android:id="@+id/closeAccessory"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/close_accessory"
+	        android:padding="3dp"
+	        android:enabled="false"/>
+        
+    </LinearLayout>    
+    
+    <!-- Send Data Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/transmit_data"
+        style="?android:listSeparatorTextViewStyle"/>
+    
+    <!-- Send Data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText 
+            android:id="@+id/stringMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/transmit_string_data"/>
+        
+        <Button
+            android:id="@+id/sendStringMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:enabled="false"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/hexMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/transmit_hex_data"/>
+        
+        <Button
+            android:id="@+id/sendHexMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:enabled="false"/>
+        
+    </LinearLayout>
+    
+    <!-- Log -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log"
+        android:labelFor="@+id/log"
+        style="?android:listSeparatorTextViewStyle"/>
+    
+    <EditText
+        android:id="@id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:padding="3dp"/>
+    
+</LinearLayout>

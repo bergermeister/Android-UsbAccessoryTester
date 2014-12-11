@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Select Accessory Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_accessory"
+        style="?android:listSeparatorTextViewStyle"/>
+    
+    <!-- Select Accessory Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/discoverAccessories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discover_accessories"/>
+        
+        <Spinner
+            android:id="@+id/accessoryList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"/>
+        
+    </LinearLayout>
+    
+    <!-- Settings Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/uart_settings"
+        style="?android:listSeparatorTextViewStyle"/>
+    
+    <!-- Settings Row -->
+    <LinearLayout
+        android:id="@+id/accessorySettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        
+        <!-- Baud Rates -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/baud_rate"/>
+            
+            <Spinner
+                android:id="@+id/accessoryBaudRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/baud_rates"/>
+            
+        </LinearLayout>
+        
+        <!-- Data Bits -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/data_bits"/>
+            
+            <Spinner
+                android:id="@+id/accessoryDataBits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/data_bits"/>
+            
+        </LinearLayout>
+        
+        <!-- Stop Bits -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/stop_bits"/>
+            
+            <Spinner
+                android:id="@+id/accessoryStopBits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/stop_bits"/>
+            
+        </LinearLayout>
+        
+        <!-- Stop Bits -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/parity"/>
+            
+            <Spinner
+                android:id="@+id/accessoryParity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/parity"/>
+            
+        </LinearLayout>
+        
+        <!-- Flow Control -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               	android:text="@string/flow_control"/>
+            
+            <Spinner
+                android:id="@+id/accessoryFlowControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/flow_control"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <!-- Open / Close Accessory Row -->
+     <Button
+		android:id="@+id/openAccessory"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/open_accessory"
+		android:padding="3dp"
+		android:enabled="false"/>
+    
+</LinearLayout>
